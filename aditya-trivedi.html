@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f1f5f9;
+        }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="flex justify-between items-center p-6 max-w-6xl mx-auto">
+        <div class="mono text-xl font-bold tracking-tighter text-sky-400">aditya@portfolio:~$</div>
+        <div class="space-x-8 hidden md:flex font-medium text-slate-400">
+            <a href="#about" class="hover:text-white transition">About</a>
+            <a href="#projects" class="hover:text-white transition">Projects</a>
+            <a href="#stack" class="hover:text-white transition">Stack</a>
+            <a href="#drawings" class="hover:text-white transition">Drawings</a>
+        </div>
+    </nav>
+
+    <header id="about" class="max-w-6xl mx-auto px-6 py-20">
+        <h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tight">
+            Hi! <span class="gradient-text"></span><br>
+            I am Aditya <span class="gradient-text"></span>
+        </h1>
+        <p class="text-xl text-slate-400 max-w-2xl leading-relaxed">
+            I'm a first-year B.Tech student at MIT Manipal. I spend my time hunting CTF flags, 
+            customizing my linux distro, and hitting apexes in Assetto Corsa.
+        </p>
+    </header>
+
+    <section class="max-w-4xl mx-auto px-6 mb-24">
+        <div class="bg-[#1e293b] rounded-lg shadow-2xl overflow-hidden border border-slate-700">
+            <div class="bg-[#334155] px-4 py-2 flex items-center space-x-2">
+                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                <span class="mono text-xs text-slate-300 ml-4">aditya — fish — 80x24</span>
+            </div>
+            <div class="p-6 mono text-sm md:text-base space-y-2">
+                <p class="text-emerald-400">aditya@zenbook ~> <span class="text-white">fastfetch</span></p>
+                <div class="flex space-x-6">
+                    <pre class="text-sky-400 hidden md:block">
+⢀⣀⣀⣀⠀⠀⠀⠀⢀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢸⣿⣿⡿⢀⣠⣴⣾⣿⣿⣿⣿⣇⡀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢸⣿⣿⠟⢋⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣿⡿⠓⡐⠒⢶⣤⣄⡀⠀
+⠸⠿⠇⢰⣿⣿⡆⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⡷⠈⣿⣿⣉⠁
+⠀⠀⠀⠀⠈⠉⠀⠈⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠀⠈⠉⠁⠀⠈⠉⠉⠀
+               </pre>
+                    <div class="text-slate-300">
+                        <p><span class="text-sky-400 font-bold">who:</span> Aditya Trivedi</p>
+                        <p><span class="text-sky-400 font-bold">where:</span> MIT Manipal</p>
+                        <p><span class="text-sky-400 font-bold">what:</span> CS & Fintech</p>
+                        <p><span class="text-sky-400 font-bold">GitHub:</span> <a href="https://github.com/landobottlewins" class="underline hover:text-white transition">landobottlewins</a></p>
+                        <p><span class="text-sky-400 font-bold">LinkedIn:</span> <a href="https://www.linkedin.com/in/landobottlewins" class="underline hover:text-white transition">landobottlewins</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-12">
+        <h2 class="text-3xl font-bold mb-10 border-b border-slate-800 pb-4">Key Involvement</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-sky-500 transition group">
+                <h3 class="text-2xl font-bold mb-3 group-hover:text-sky-400">Formula Manipal Driverless</h3>
+                <p class="text-slate-400 mb-4">Learning to design, build, and program autonomous, electric formula-style race cars. Develop fully autonomous racing vehicles that can compete without a human driver.</p>
+                <span class="text-xs font-bold uppercase tracking-widest text-sky-500">Python / ROS2</span>
+            </div>
+            <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 transition group">
+                <h3 class="text-2xl font-bold mb-3 group-hover:text-indigo-400">Cybersecurity & CTFs</h3>
+                <p class="text-slate-400 mb-4">Focused on binary exploitation and forensics. Actively breaking down challenges and building secure workflows in virtualized environments.</p>
+                <span class="text-xs font-bold uppercase tracking-widest text-indigo-500">Forensics / Linux</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack" class="max-w-6xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-3 gap-12">
+            <div>
+                <h4 class="font-bold text-sky-400 mb-4 uppercase tracking-wider">Dev Stack</h4>
+                <ul class="space-y-2 text-slate-300">
+                    <li>Python & Pandas</li>
+                    <li>Java (OOP focus)</li>
+                    <li>Linux Sysadmin</li>
+                    <li>Virtualization (KVM)</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-sky-400 mb-4 uppercase tracking-wider">Interests</h4>
+                <ul class="space-y-2 text-slate-300">
+                    <li>Automotive Drawing</li>
+                    <li>Endurance Motorsports</li>
+                    <li>Sim Racing (Monect/Gyro)</li>
+                    <li>Normative Ethics</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-sky-400 mb-4 uppercase tracking-wider">Current Rig</h4>
+                <ul class="space-y-2 text-slate-300">
+                    <li>ASUS Zenbook 14 OLED</li>
+                    <li>Dell Inspiron (Secondary)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="drawings" class="max-w-6xl mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold mb-10 border-b border-slate-800 pb-4">
+        Automotive Sketches
+    </h2>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+        
+        <div class="rounded-xl border border-slate-700 bg-slate-800 overflow-hidden">
+            <img src="drawing1.jpeg" 
+                 alt="Car Sketch 1"
+                 class="w-full h-72 object-cover">
+            <div class="p-4">
+                <p class="text-slate-300 text-sm mono"></p>
+            </div>
+        </div>
+
+        <div class="rounded-xl border border-slate-700 bg-slate-800 overflow-hidden">
+            <img src="drawing2.jpeg" 
+                 alt="Car Sketch 2"
+                 class="w-full h-72 object-cover">
+            <div class="p-4">
+                <p class="text-slate-300 text-sm mono"></p>
+            </div>
+        </div>
+
+        <div class="rounded-xl border border-slate-700 bg-slate-800 overflow-hidden">
+            <img src="drawing3.jpeg" 
+                 alt="Car Sketch 3"
+                 class="w-full h-72 object-cover">
+            <div class="p-4">
+                <p class="text-slate-300 text-sm mono"></p>
+            </div>
+        </div>
+        <div class="rounded-xl border border-slate-700 bg-slate-800 overflow-hidden">
+            <img src="drawing4.jpeg" 
+                 alt="Car Sketch 4"
+                 class="w-full h-72 object-cover">
+            <div class="p-4">
+                <p class="text-slate-300 text-sm mono"></p>
+            </div>
+        </div>
+
+        <div class="rounded-xl border border-slate-700 bg-slate-800 overflow-hidden">
+            <img src="drawing5.jpeg" 
+                 alt="Car Sketch 5"
+                 class="w-full h-72 object-cover">
+            <div class="p-4">
+                <p class="text-slate-300 text-sm mono"></p>
+            </div>
+        </div>
+
+        <div class="rounded-xl border border-slate-700 bg-slate-800 overflow-hidden">
+            <img src="drawing6.jpeg" 
+                 alt="Car Sketch 6"
+                 class="w-full h-72 object-cover">
+            <div class="p-4">
+                <p class="text-slate-300 text-sm mono"></p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <footer class="text-center py-20 border-t border-slate-800">
+        <p class="text-slate-500 mono text-sm">designed by landobottlewins | 2026</p>
+    </footer>
+
+</body>
+</html>
